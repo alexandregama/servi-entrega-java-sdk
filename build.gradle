@@ -1,0 +1,26 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+
+jar {
+    baseName = 'servi-entrega-java-sdk'
+    version  = '0.0.1'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'junit', name: 'junit', version: '4.4'
+    testCompile("junit:junit")
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
